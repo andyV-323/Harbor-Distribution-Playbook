@@ -23,10 +23,10 @@ app.get("/form.html", function(req, res) {
 
 
     var db_config = {
-    host: 'us-cdbr-east-06.cleardb.net',
-    user: 'b541984daea7e3',
-    password: 'fa54833f',
-    database: 'heroku_2e87543418faec5',
+    host: 'hostname',
+    user: 'root',
+    password: '',
+    database: 'nameOfYourDatabase',
 };
 
 var connection;
