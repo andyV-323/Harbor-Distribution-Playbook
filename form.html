@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="playbook">
+    <div class="container mt-4">
+        <form action="/submit" method="POST">
+            <h3 class="title">Driver Playbook</h3>
+            <hr>
+            <div class="form-group">
+                <label for="route">Route:</label>
+                <input class="form-control" type="text" name="route" placeholder="Route" required><br>
+            </div>
+            <div class="form-group">
+                <label for="account">Account:</label>
+                <input class="form-control" type="text" name="account" placeholder="Account" required><br>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input class="form-control" type="text" name="address" placeholder="Address" required><br>
+            </div>
+            <div class="form-group">
+                <label for="contact">Contact:</label>
+                <input class="form-control" type="text" name="contact" placeholder="Contact" required><br>
+            </div>
+            <div class="form-select">
+                <select name="location" class="form-select placeholder" required>
+                    <option value="">Delivery Location</option>
+                    <option value="Front Door">Front Door</option>
+                    <option value="Backdoor/Alley">Backdoor/Alley</option>
+                    <option value="Sidedoor">Sidedoor</option>
+                </select>
+            </div>
+            <div class="form-select">
+                <select name="parking" class="form-select placeholder" required>
+                    <option value="">Where To Park</option>
+                    <option value="Street">Street</option>
+                    <option value="Parking Lot">Parking Lot</option>
+                    <option value="Alley">Alley</option>
+                    <option value="Dock">Dock</option>
+                </select>
+            </div>
+            <div class="form-select">
+                <select name="delivery" class="form-select placeholder" required>
+                    <option value="">Type Of Delivery</option>
+                    <option value="Double Wheel">Double Wheel</option>
+                    <option value="Wheel and Count">Wheel and Count</option>
+                    <option value="Count Outside">Count Outside</option>
+                    <option value="Double Wheel">Double Wheel</option>
+                    <option value="Putaway">Putaway</option>
+                </select>
+            </div>
+            <div class="form-select">
+                <select name="stack" class="form-select placeholder" required>
+                    <option value="">Stack</option>
+                    <option value="Clean">Clean</option>
+                    <option value="Dirty">Dirty</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <textarea type="text" class="form-textarea" name="advice" placeholder="Advice"></textarea>
+            </div>
+            <div>
+                <button class="button" type="submit">Submit</button>
+                <a href="/">
+                    <button class="button" type="button">Home</button>
+                </a>
+            </div>
+        </form>
+        <div id="message"></div>
+    </div>
+    <script src="/script.js"></script>
+    <script src="insert.js"></script>
+</body>
+
+</html>
