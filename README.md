@@ -4,7 +4,7 @@ This is a ReadMe file for the project "# Harbor-Distribution-Playbook Project".
 
 This is a Dynamic website I created for Harbor Distribution LLC.Created client-side web application utilizing HTML, CSS, Node.js, and Javascript to support dynamic content consumption and user engagement. Configured server-side architecture with Express and MySQL to handle CRUD operations with the database. Integrated version control with Git & enhanced scalability by deploying the application on the Heroku platform.
 
-## Getting Started
+# Getting Started
 
 ## Dependencies 
 In order to run this website locally on your machine you will need to install Node.js. You will also need a database in this case i used MySQLWorkbench.
