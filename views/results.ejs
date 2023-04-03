@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/3c028052b1.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Results</title>
+</head>
+
+<body class="results-page">
+    <br />
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Route</th>
+                <th>Account</th>
+                <th>Address</th>
+                <th>Contact</th>
+                <th>Delivery Location</th>
+                <th>Where To Park</th>
+                <th>Type Of Delivery</th>
+                <th>Stack</th>
+                <th>Advice</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <% if (data.length) { %>
+            <% for (var i = 0; i < data.length; i++) { %>
+            <tr>
+                <th scope="row">
+                    <%= i + 1 %>
+                </th>
+                <td>
+                    <%= data[i].route %>
+                </td>
+                <td>
+                    <%= data[i].account %>
+                </td>
+                <td>
+                    <%= data[i].address %>
+                </td>
+                <td>
+                    <%= data[i].contact %>
+                </td>
+                <td>
+                    <%= data[i].location %>
+                </td>
+                <td>
+                    <%= data[i].parking %>
+                </td>
+                <td>
+                    <%= data[i].delivery %>
+                </td>
+                <td>
+                    <%= data[i].stack %>
+                </td>
+                <td>
+                    <%= data[i].advice %>
+                </td>
+                <td><a href="/edit/<%= data[i].account %>" class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></a></td>
+            </tr>
+            <% } %>
+            <% } %>
+        </tbody>
+    </table>
+    <div class="home">
+        <a href="/">
+            <button class="button" type="button">HOME</button>
+        </a>
+    </div>
+    </div>
+</body>
+
+</html>
