@@ -1,4 +1,4 @@
-This is a ReadMe file for the project "# Harbor-Distribution-Playbook Project".
+# Harbor-Distribution-Playbook Project
 
 ## Description
 
